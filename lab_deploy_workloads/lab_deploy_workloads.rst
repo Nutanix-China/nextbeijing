@@ -4,8 +4,8 @@
 初级实验4-A:AHV的虚机部署
 -------------------------
 预计完成时间: 15分钟
-本实验使用Prism Central
-在浏览器中打开Prism Central链接，使用admin用户登录Prism Central界面
+
+本实验使用Prism Central，在浏览器中打开Prism Central链接，使用admin用户登录Prism Central界面
 
 实验目的
 ++++++++
