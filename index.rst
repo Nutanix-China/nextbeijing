@@ -33,8 +33,9 @@
   :caption: 中级实验-数据保护与恢复
   :name: _monitoring_and_managing_the_environment
   :hidden:
-  lab_data_protection/lab_data_protection
+  
   backup_and_dr/backup_and_dr
+  lab_data_protection/lab_data_protection
   
 .. toctree::
   :maxdepth: 2
