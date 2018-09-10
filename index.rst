@@ -223,6 +223,7 @@ Nutanix实验室将会在Nutanix HPOC或现场实验环境中运行，实验讲�
 https://citrixready.nutanix.com - *Accessible via the Citrix Receiver client or HTML5*
 
 **Nutanix内部员工** - 使用Nutanix公司SSO域帐户
+
 **非Nutanix员工** - **用户名:** POCxxx-User01 (up to POCxxx-User20), **密码:** *<培训讲师提供>*
 
 2)Employee Pulse Secure VPN
