@@ -20,21 +20,21 @@ Prism Central
 在浏览器中打开 https://<*Prism-Central-IP*>:9440
 建议使用Google Chrome或Firefox浏览器
 
-在界面输入登陆用户名和密码信息，并点击**Enter**:
+在界面输入登陆用户名和密码信息，并点击 **Enter** :
 
 - **Username** - admin
 - **Password** - *HPOC Password*
 
 登录Prism Central后，请尝试各功能，以便熟悉Prism UI
 
-浏览**Home** 页面的各种显示信息:
+浏览 **Home** 页面的各种显示信息:
 
 - Cluster Runway
 - Cluster Quick Access
 - Impacted Cluster | Alerts
 - tasks
 
-浏览**Explore** 页面的所有功能选项:
+浏览 **Explore** 页面的所有功能选项:
 
 - VMs
 - Images
@@ -69,19 +69,19 @@ Prism Central
 
 如果Prism Central同时管理多个集群，该界面会显示所有集群中可管理的主机列表。
 
-在**Prism Central > Explore**界面中, 在左边菜单中点击**Hosts**.
+在 **Prism Central > Explore** 界面中, 在左边菜单中点击 **Hosts** .
 
 在哪个界面能够看到所有已部署的虚拟机列表？是不是与下图的界面类似？
 
 .. figure:: images/nutanix_tech_overview_12.png
 
-在**Prism Central > Explore**菜单中, 点击菜单栏左边的**VMs**.
+在 **Prism Central > Explore** 菜单中, 点击菜单栏左边的 **VMs** .
 
 在哪个页面会显示系统中的最新活动？
 在此页面上，您可以监控任何任务的进度，并使用时间戳跟踪过去的操作。
 你能想出两种不同的方法吗？
 
-第一种方式，在**Prism Central > Home**界面中, 点击**View All Tasks**. 
+第一种方式，在 **Prism Central > Home** 界面中, 点击 **View All Tasks** . 
 第二种方式, 点击 :fa:`circle-o`
 
 .. note::
@@ -103,7 +103,7 @@ Prism Element
 
 Open https://<*NUTANIX-CLUSTER-IP*>:9440
 
-使用以下登陆密钥进行登陆**Enter**:
+使用以下登陆密钥进行登陆 **Enter** :
 
 - **Username** - admin
 - **Password** - *HPOC Password*
@@ -130,7 +130,7 @@ Open https://<*NUTANIX-CLUSTER-IP*>:9440
 
 使用导航栏进入Hardware菜单，查看集群的硬件状态.
 
-进入**Prism > Hardware**, 点击**Hardware**, 并点击**Diagram**.
+进入 **Prism > Hardware** , 点击 **Hardware** , 并点击 **Diagram** .
 
 查看硬件信息总结:
 
@@ -172,26 +172,26 @@ Open https://<*NUTANIX-CLUSTER-IP*>:9440
 
 .. figure:: images/nutanix_tech_overview_06.png
 
-答：您可以在点击**User**的下拉菜单中，单击** About Nutanix **.
+答：您可以在点击 **User** 的下拉菜单中，单击 **About Nutanix** .
 
 2.您如何进入以下界面以查看主机（或节点）数量以及资源容量和当前利用率的摘要？
 
 .. figure:: images/nutanix_tech_overview_07.png
 
-答：在**Prism > Hardware**, 点击**Hardware**, 然后点击**Table**.
+答：在 **Prism > Hardware** , 点击 **Hardware** , 然后点击 **Table** .
 
 3. 您可以在哪个界面检查集群的健康检查状态？
 
 .. figure:: images/nutanix_tech_overview_08.png
 
-答：在**Prism > Health**, 点击**Health**, 然后点击右侧的**Summary**菜单.
+答：在 **Prism > Health** , 点击 **Health** , 然后点击右侧的 **Summary** 菜单.
 
 4. 在哪个页面能够显示系统中的最新活动？
    在哪个页面上，您可以监控所有任务的进度，并使用时间戳跟踪过去的操作。你能想出两种不同的方法吗？
 
 .. figure:: images/nutanix_tech_overview_09.png
 
-第一种方式，在**Prism > Tasks**, 点击**Tasks**. 
+第一种方式，在 **Prism > Tasks** , 点击 **Tasks** . 
 第二种方式, 点击 :fa:`circle-o`.
 
 
