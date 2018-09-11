@@ -23,18 +23,18 @@ Nutanix的镜像服务是用来存储您的构建ISO以及您创建的磁盘映�
 
 我们本实验使用CentOS ISO上传作为镜像并用于部署VM。
 
-在**Prism Central > Explore**, 点击**Images**.
+在 **Prism Central > Explore** , 点击 **Images** .
 
-然后点击**Add Image**, 选择**URL**方式.
+然后点击 **Add Image** , 选择 **URL** 方式.
 
-填写以下字段，然后单击**Upload File**:
+填写以下字段，然后单击 **Upload File** :
 
 - **Enter Image URL** - http://<讲师提供IP地址>/images/CentOS-7-x86_64-Minimal-1804.iso
 #更新
 
 .. figure:: images/deploy_workloads_01.png
 
-接下来，按提示填写以下字段，然后单击**Save**:
+接下来，按提示填写以下字段，然后单击 **Save** :
 
 - **Image Name** - CentOS7-*initials*
 - **Image Type** - ISO
@@ -42,11 +42,11 @@ Nutanix的镜像服务是用来存储您的构建ISO以及您创建的磁盘映�
 
 .. figure:: images/deploy_workloads_02.png
 
-现在我们再来上传Windows 2012 ISO，用于部署实验VM，**如果群集尚未提供此镜像**
+现在我们再来上传Windows 2012 ISO，用于部署实验VM， **如果群集尚未提供此镜像**
 
-点击**Add Image**, 然后选择**URL**选项.
+点击 **Add Image** , 然后选择**URL**选项.
 
-填写以下字段，然后单击**Upload File**:
+填写以下字段，然后单击 **Upload File**:
 
 - **Enter Image URL** - http://<讲师提供IP地址>/images/server_2012_r2_vl_x64_dvd_3319595.iso
 #更新
@@ -60,7 +60,9 @@ Nutanix的镜像服务是用来存储您的构建ISO以及您创建的磁盘映�
 .. note::
 
   1）在Prism Central中的映像管理，允许您上载的镜像可同时用于所有在注册到Prism Central实例的任何群集中。
+  
   2）此工具还可以将VM磁盘映像转换为AHV可以理解的格式。
+  
   3）映像服务支持raw，vhd，vhdx，vmdk，vdi，iso和qcow2磁盘格式
 
 
@@ -70,7 +72,7 @@ Nutanix的镜像服务是用来存储您的构建ISO以及您创建的磁盘映�
 
 从Prism Central部署Linux VM
 
-在**Prism Central > Explore > VMs**, 点击**Create VM**.
+在 **Prism Central > Explore > VMs**, 点击 **Create VM**.
 
 按提示填写以下字段，然后点击**Save**:
 
@@ -89,18 +91,18 @@ Nutanix的镜像服务是用来存储您的构建ISO以及您创建的磁盘映�
 
 .. figure:: images/deploy_workloads_04.png
 
-- 选择**+ Add New Disk**
+- 选择 **+ Add New Disk**
     - **Type** - DISK
     - **Operation** - Allocate on Storage Container
     - **Storage Container** - Default Container
     - **Size (GiB)** - 30 GiB
     - Select **Add**
 
-- 选择**Add New NIC**
+- 选择 **Add New NIC**
     - **VLAN Name** - Primary
     - Select **Add**
 
-点击**Save**以创建VM.
+点击 **Save**以创建VM.
 
 创建Windows VM
 +++++++++++++++++++++
@@ -113,9 +115,9 @@ Nutanix的镜像服务是用来存储您的构建ISO以及您创建的磁盘映�
     Nutanix为AHV上的Windows操作系统提供了一组定制的Virtual I/O驱动程序。
     
 
-在**Prism Central > Explore > VMs**, 点击**Create VM**.
+在 **Prism Central > Explore > VMs**, 点击 **Create VM**.
 
-按提示填写以下字段，然后点击**Save**:
+按提示填写以下字段，然后点击 **Save**:
 
 - **Name** - Windows_VM-*initials*
 - **Description** - (Optional) Description for your VM.
@@ -125,9 +127,9 @@ Nutanix的镜像服务是用来存储您的构建ISO以及您创建的磁盘映�
 - 选择CDROM旁边的Edit图标：
     - **Operation** - Clone from Image Service
     - **Image** - Windows2012-*initials*
-    - 点击**Update**
+    - 点击 **Update**
 
-- 选择**+ Add New Disk**
+- 选择 **+ Add New Disk**
     - **Type** - DISK
     - **Operation** - Allocate on Storage Container
     - **Storage Container** - Default Container
@@ -140,23 +142,23 @@ Nutanix的镜像服务是用来存储您的构建ISO以及您创建的磁盘映�
     - **Image** - Nutanix VirtIO
     - Select **Add**
 
-- 选择**Add New NIC**
+- 选择 **Add New NIC**
     - **VLAN Name** - Primary
-      - Select **Add**
+    - Select **Add**
 
-点击**Save**以创建VM.
+点击 **Save**以创建VM.
 
 现在让我们试试启动VM:
 
-选择要启动的VM，然后从**Actions**下拉菜单中单击**Power On**
+选择要启动的VM，然后从 **Actions**下拉菜单中单击 **Power On**
 
 接下来打开一个控制台会话：
 
-选择VM，然后从**Actions**下拉菜单中单击**Launch Console**。
+选择VM，然后从 **Actions**下拉菜单中单击 **Launch Console**。
 
 根据提示进行下一步操作并等待安装进度到需要选择Windows安装路径的界面，此时系统安装进程会提示无法找到硬盘
 
-选择**Load Driver**，并选择找到Nutanix VirtIO挂载的CD目录。
+选择 **Load Driver**，并选择找到Nutanix VirtIO挂载的CD目录。
 
 浏览CD的目录，并选择与要安装的Windows操作系统版本一致的目录。
 
@@ -184,8 +186,9 @@ Nutanix的镜像服务是用来存储您的构建ISO以及您创建的磁盘映�
   
    - 通过VMware vSphere创建VM后，它将显示在Prism VMs列表中。
    - 或者，如果通过Prism创建VM，它将显示在VMware vSphere UI中。
-   示例如下图所示。
-   .. figure:: images/deploy_workloads_08.png
+   示例如下图所示
+   
+.. figure:: images/deploy_workloads_08.png
 
 小贴士
 +++++++++
