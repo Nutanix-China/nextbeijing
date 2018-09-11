@@ -25,22 +25,22 @@ VM快照与恢复
 
 创建VM快照并从快照还原VM。
 
-在 **Prism Element> VM** 中，单击 **VM** ，然后单击 **Table** 
+- 在 **Prism Element> VM** 中，单击 **VM** ，然后单击 **Table** 
 
 找到您在上一个实验中创建的Linux VM（Linux_VM- *intials*）
  - 如果VM已开启，请将其关闭
 
-选择VM，然后从VM列表下方的菜单中单击 **Snapshot** 。
+- 选择VM，然后从VM列表下方的菜单中单击 **Snapshot** 。
 
 .. figure:: image/data_protection01.png
  
-为快照起一个名字(注:intials输入实验人员的姓名全名的拼音）
+- 为快照起一个名字(注:intials输入实验人员的姓名全名的拼音）
 
 .. figure:: image/data_protection02.png
 
-点击submit提交
+- 点击 **submit** 提交
 
-返回VM列表并单击VM的名称以打开其控制台窗口
+- 返回VM列表并单击VM的名称以打开其控制台窗口
 
 单击 **Snapshots** 以查看快照
 
@@ -50,9 +50,9 @@ VM快照与恢复
 
 .. figure:: image/data_protection04.png
 
-单击 **Details** 可查看快照时的所有VM属性
+- 单击 **Details** 可查看快照时的所有VM属性
 
-现在我们可以通过删除磁盘模拟我们的测试VM遭到损坏的情况
+- 现在我们可以通过删除磁盘模拟我们的测试VM遭到损坏的情况
 
 单击VM下面菜单中的Power Off Actions,选择Guest Shutdown关闭虚机
 
@@ -60,14 +60,14 @@ VM前面的绿点变为红点后，单击下面菜单中的 **Update** 并修改
 
 .. figure:: image/data_protection05.png
 
-向下滚动到磁盘部分，通过点击 **X** 图标，删除CD-ROM和DISKS
+- 向下滚动到磁盘部分，通过点击 **X** 图标，删除CD-ROM和DISKS
 
 点击 **Save** 确认更改.
 
 .. figure:: image/data_protection06.png
 
 
-现在尝试启动该VM并打开其控制台窗口
+- 现在尝试启动该VM并打开其控制台窗口
 
 .. figure:: image/data_protection07.png
 
@@ -78,14 +78,14 @@ VM前面的绿点变为红点后，单击下面菜单中的 **Update** 并修改
 
 关闭VM电源。
 
-选择VM，然后从VM列表下方的菜单中单击 **VM Snapshots** .
+- 选择VM，然后从VM列表下方的菜单中单击 **VM Snapshots** .
 
 点击 **Restore** 将VM恢复到删除磁盘之前的状态.
 
 .. figure:: image/data_protection09.png
 
 
-尝试打开VM并打开控制台。
+- 尝试打开VM并打开控制台。
 
 验证VM是否已成功引导以及其配置是否已还原
 
@@ -95,17 +95,17 @@ VM前面的绿点变为红点后，单击下面菜单中的 **Update** 并修改
 创建Async DR （数据异步复制）
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-在 **Prism Element > Data Protection** 中, 单击 **Data Protection** , 然后点击 **Table** .
+- 在 **Prism Element > Data Protection** 中, 单击 **Data Protection** , 然后点击 **Table** .
 
 选择 **+ Protection Domain** 以创建PD，然后单击创建Async DR.
 
 .. figure:: image/data_protection10.png
 
-输入PD的名称PD- *NAME* （注: NAME输入实验人员的姓名全名的拼音）
+- 输入PD的名称PD- *NAME* （注: NAME输入实验人员的姓名全名的拼音）
 
 然后单击 **Create** .
 
-选择您希望加入PD的VM:
+- 选择您希望加入PD的VM:
 
 - 通过过滤或滚动以选择您在此训练营中创建的VM，加入到此PD中
 - 向下滚动并单击 **Protect Selected Entities** .
@@ -149,5 +149,5 @@ VM前面的绿点变为红点后，单击下面菜单中的 **Update** 并修改
 
  -  Nutanix通过不同的策略为虚拟数据中心提供数据保护解决方案，包括一对一或一对多复制。
  -  Nutanix在VM，文件和卷组级别提供数据保护功能，因此VM和数据在崩溃一致的环境中保持安全。
- - 您可以通过Web控制台配置保护域和远程站点来实施数据保护策略。
+ -  您可以通过Web控制台配置保护域和远程站点来实施数据保护策略。
  
