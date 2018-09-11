@@ -5,8 +5,8 @@
 ------------------------
 
 预计完成时间: 15分钟
-本实验使用Prism Central
-在浏览器中打开Prism Central链接，使用admin用户登录Prism Central界面
+
+本实验使用Prism Central,在浏览器中打开Prism Central链接，使用admin用户登录Prism Central界面
 
 实验目的
 ++++++++
@@ -21,7 +21,7 @@
 电源操作和控制台访问
 ................................
 
-在**Prism Central > Explore > VMs**菜单.
+在 **Prism Central > Explore > VMs**菜单.
 
 找到您在上一个实验中创建的Linux VM (Linux_VM-*initials*). (必要时可以使用Prism的搜索功能)
 
@@ -31,7 +31,7 @@
   
 现在我们来启动VM:
 
-选择VM，然后从**Actions**下拉菜单中单击**Power On**
+选择VM，然后从 **Actions**下拉菜单中单击 **Power On**
 
 .. note::
 
@@ -41,7 +41,7 @@
   
 接下来打开一个控制台会话:
 
-选择VM，然后从**Actions**下拉菜单中单击**Launch Console**.
+选择VM，然后从 **Actions**下拉菜单中单击 **Launch Console**.
 
 .. note::
 
@@ -76,7 +76,7 @@ Prism搜索功能可以更轻松地识别问题或在Prism Central中查找相�
 - powered on
 - powered on cpu = 8
 
-在**Prism Central >** 点击放大镜图标:fa:`search`.
+在 **Prism Central >** 点击放大镜图标:fa:`search`.
 
 - 请注意结果类型：实体，警报和帮助
 - 可通过单击星形图标以保存搜索.
@@ -88,13 +88,13 @@ Prism搜索功能可以更轻松地识别问题或在Prism Central中查找相�
 VM克隆
 ..........
 
-在**Prism Central > Explore > VMs**.
+在 **Prism Central > Explore > VMs**.
 
 查找并基于CentOS的虚拟机克隆四个副本
 
-选择VM，然后从**Actions**下拉菜单中单击**Clone**
+选择VM，然后从 **Actions**下拉菜单中单击 **Clone**
 
-按如下内容填写以下字段，然后单击**保存**
+按如下内容填写以下字段，然后单击 **Save**
 
 - **Number of Clones** - 4
 - **Prefix Name**  - Flow-*initials*-Clone
@@ -107,22 +107,22 @@ VM克隆
 在主机之间进行VMotion迁移
 ..........................
 
-在**Prism Central > Explore > VMs**菜单中.
+在 **Prism Central > Explore > VMs**菜单中.
 
 找到上一个实验中创建的虚拟机(Linux_VM-*initials*).
 
 - 如果VM已开机，请将其关机
 
-您应该可以看到在关闭电源后,VM的**Host**列中没有条目。
+您应该可以看到在关闭电源后,VM的 **Host**列中没有条目。
 
-启动VM，并记下**Host**列中的**Hosts Name**
+启动VM，并记下 **Host**列中的 **Hosts Name**
 .. figure:: images/manage_workloads_03.png
 
-选择VM，然后从**Actions**下拉菜单中单击**Migrate**
+选择VM，然后从 **Actions**下拉菜单中单击 **Migrate**
 
 您可以选择群集中的其他主机之一作为VM的迁移目标，也可以接受默认值并让AHV自动选择位置。
 
-单击**Migrate**以完成操作.
+单击 **Migrate**以完成操作.
 
 任务完成后，请验证您的VM主机位置是否已从上面记录的主机更改为您选择的新位置。
 
@@ -131,36 +131,36 @@ VM克隆
 配置VM到主机的关联策略
 ......................................
 
-在**Prism Central > Explore > VMs**.
+在 **Prism Central > Explore > VMs**.
 
 找到上一个实验中创建的虚拟机(Linux_VM-*initials*).
 
 - 如果VM已开机，请将其关机
 
-选择VM，然后从**Actions**下拉菜单中单击**Configure VM Host Affinity**
+选择VM，然后从 **Actions**下拉菜单中单击 **Configure VM Host Affinity**
 
-选择一个可以与VM关联的**Host**，如NTNX-AHV-2,然后单击“Save”完成
+选择一个可以与VM关联的 **Host**，如NTNX-AHV-2,然后单击“Save”完成
 
-启动VM，并验证它是否在您在关联策略中选择的**Host**上。
+启动VM，并验证它是否在您在关联策略中选择的 **Host**上。
 
-选择VM，然后从**Actions**下拉菜单中单击**Migrate**
+选择VM，然后从 **Actions**下拉菜单中单击 **Migrate**
 
 此时会看到类似如下提示：
 
 -此VM已将主机关联设置为主机NTNXAHV-2，如果不将主机关联设置为该主机，则无法将其迁移到任何其他主机
  （This VM has host affinity set to host NTNXAHV-2. It cannot be migrated to any other host without setting the host affinity to that host.）
 
-单击**Cancel**以退出迁移
+单击 **Cancel**以退出迁移
 
-选择VM，然后从**Actions**下拉菜单中单击**Configure VM Host Affinity**。
+选择VM，然后从 **Actions**下拉菜单中单击 **Configure VM Host Affinity**。
 
-选择VM可以与之关联的另一个**Host**，然后单击“Save”完成。
+选择VM可以与之关联的另一个 **Host**，然后单击“Save”完成。
 
-选择VM，然后从**Actions**下拉菜单中单击**Migrate**。
+选择VM，然后从 **Actions**下拉菜单中单击 **Migrate**。
 
 - 现在有一个显示可用主机的下拉菜单
 
-手动选择主机或允许AHV自动选择，然后单击**Migrate**
+手动选择主机或允许AHV自动选择，然后单击 **Migrate**
 
 您应该看到VM已移至另一台主机
 
