@@ -116,6 +116,7 @@ VM克隆
 您应该可以看到在关闭电源后,VM的 **Host** 列中没有条目。
 
 启动VM，并记下 **Host** 列中的 **Hosts Name** 
+
 .. figure:: images/manage_workloads_03.png
 
 选择VM，然后从 **Actions** 下拉菜单中单击 **Migrate** 
