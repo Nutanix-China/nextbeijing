@@ -19,13 +19,13 @@ Prism Element存储配置项
 配置存储容器Container
 ............................
 
-**Containers** 是软件定义的逻辑结构，通过设定存储策略来实现存储管理的简化。容器的概念相当于ESXi的datastore
+ **Containers** 是软件定义的逻辑结构，通过设定存储策略来实现存储管理的简化。容器的概念相当于ESXi的datastore
 
 我们先用Prism Element来开始基本的Container创建操作.
 
-在菜单中选择**Prism > Storage**, 点击**Storage**标签栏, 点击**Table**,然后单击**+ Storage Container**.
+在菜单中选择 **Prism > Storage** , 点击 **Storage** 标签栏, 点击 **Table** ,然后单击 **+ Storage Container** .
 
-使用以下参数进行本次实验配置 (部分项目需要点击高级设置**Advance Settings**), 然后点击 **Save**:
+使用以下参数进行本次实验配置 (部分项目需要点击高级设置 **Advance Settings** ), 然后点击 **Save** :
 
 - **Name** - container-*intials*(
 - **Advertised Capacity** - 5 GiB
@@ -57,18 +57,18 @@ Prism Element存储配置项
 
 .. figure:: images/storage_config_03.png
 
-在**Prism> Home**中，单击Data Resiliency Status框中的**green OK**。这将打开“数据弹性状态”窗口
+在 **Prism> Home** 中，单击Data Resiliency Status框中的 **green OK** 。这将打开“数据弹性状态”窗口
 
 上图显示了Data Resiliency Status窗口，您可以在其中查看，诸如可以容忍多少ZooKeeper节点故障而不会影响群集。
 列出的每个服务都在群集中具有特定功能，Zookeeper节点是用来维护集群的配置信息。
 
-可以通过单击齿轮菜单中的**Redundancy State**来配置Prism Element中的RF冗余度。
+可以通过单击齿轮菜单中的 **Redundancy State** 来配置Prism Element中的RF冗余度。
 
 .. 注::
 
   在本练习中，请将冗余因子配置为2.
 
-在**Prism >**菜单中:fa:`cog`, 点击 **Redundancy State**.
+在 **Prism >** 菜单中:fa:`cog`, 点击 **Redundancy State** .
 
 小贴士
 +++++++++
