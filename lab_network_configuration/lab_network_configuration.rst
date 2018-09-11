@@ -61,11 +61,11 @@ IP地址管理（IPAM）
 
 连接到Prism Central并为用户VM的网络接口创建网络，使用0以外的任何VLAN，不要启用IP地址管理。
 
-在**Prism Central > Explore**界面, 点击**VMs**,并点击**Network Config**
+在 **Prism Central > Explore** 界面, 点击 **VMs** ,并点击 **Network Config** 
 
-然后点击**VM Networks**, 选择**+ Create Network**.
+然后点击 **VM Networks** , 选择 **+ Create Network** .
 
-以下字段根据提示填写并点击**Save**:
+以下字段根据提示填写并点击 **Save** :
 
 - **Name** - Network-*intials*
 - **VLAN ID** - Something other than 0
@@ -81,7 +81,7 @@ IP地址管理（IPAM）
 
 创建另一个网络，但这次启用IPAM。
 
-以下字段根据提示填写并点击 **Save**:
+以下字段根据提示填写并点击 **Save** :
 
 - **Name** - Network_IPAM-*intials*
 - **VLAN ID** - Something other than 0
