@@ -25,12 +25,12 @@ VM快照与恢复
 
 创建VM快照并从快照还原VM。
 
-- 在 **Prism Element> VM** 中，单击 **VM** ，然后单击 **Table** 
+在 **Prism Element> VM** 中，单击 **VM** ，然后单击 **Table** 
 
 找到您在上一个实验中创建的Linux VM（Linux_VM- *intials*）
  - 如果VM已开启，请将其关闭
-
-- 选择VM，然后从VM列表下方的菜单中单击 **Snapshot** 。
+ 
+选择VM，然后从VM列表下方的菜单中单击 **Snapshot** 。
 
 .. figure:: image/data_protection01.png
  
@@ -38,7 +38,7 @@ VM快照与恢复
 
 .. figure:: image/data_protection02.png
 
-- 点击 **submit** 提交
+点击 **submit** 提交
 
 - 返回VM列表并单击VM的名称以打开其控制台窗口
 
@@ -50,11 +50,11 @@ VM快照与恢复
 
 .. figure:: image/data_protection04.png
 
-- 单击 **Details** 可查看快照时的所有VM属性
+单击 **Details** 可查看快照时的所有VM属性
 
 - 现在我们可以通过删除磁盘模拟我们的测试VM遭到损坏的情况
 
-单击VM下面菜单中的Power Off Actions,选择Guest Shutdown关闭虚机
+单击VM下面菜单中的 **Power Off Actions** ,选择Guest Shutdown关闭虚机
 
 VM前面的绿点变为红点后，单击下面菜单中的 **Update** 并修改您拍摄快照的原始VM
 
@@ -115,20 +115,19 @@ VM前面的绿点变为红点后，单击下面菜单中的 **Update** 并修改
 
 
  **配置日程计划** :
+   单击 **New Schedule** .
 
-- 单击 **New Schedule** .
+- 选择备份频率(如,每两小时做一次快照).
 
--  选择备份频率(如,每两小时做一次快照).
-
--  设置保留策略(比如, 保持最多12份快照).
-
--  单击 **Create Schedule** .
+- 设置保留策略(比如, 保持最多12份快照).
+ 
+  单击 **Create Schedule** .
 
 .. figure:: image/data_protection12.png
 
 -  一个保护域可以有多个计划
 
--  点击 **Close** 退出.
+   点击 **Close** 退出.
 
 .. figure:: image/data_protection13.png
 
@@ -138,7 +137,6 @@ VM前面的绿点变为红点后，单击下面菜单中的 **Update** 并修改
 注:本地备份是此实验室环境中的唯一选项，没有配置远程目标，在有远程站点的情况下，可以单击 **+Remote Site** 进行配置，远程站点可以是Nutanix物理集群环境，或者是公有云环境。
 
 .. note::
-
   本地备份是此实验室环境中的唯一选项，因为未配置远程目标。
   您可以使用邻居群集设置远程站点
 
