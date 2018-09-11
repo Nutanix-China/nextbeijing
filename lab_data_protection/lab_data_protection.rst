@@ -25,24 +25,24 @@ VM快照与恢复
 
 创建VM快照并从快照还原VM。
 
-在 **Prism Element> VM** 中，单击 **VM** ，然后单击 **Table** 
+- 在 **Prism Element> VM** 中，单击 **VM** ，然后单击 **Table** 
 
 找到您在上一个实验中创建的Linux VM（Linux_VM- *intials*）
  - 如果VM已开启，请将其关闭
  
-选择VM，然后从VM列表下方的菜单中单击 **Snapshot** 。
+- 选择VM，然后从VM列表下方的菜单中单击 **Snapshot** 。
 
 .. figure:: image/data_protection01.png
  
-- 为快照起一个名字(注:intials输入实验人员的姓名全名的拼音）
+ 为快照起一个名字(注:intials输入实验人员的姓名全名的拼音）
 
 .. figure:: image/data_protection02.png
 
-点击 **submit** 提交
+- 点击 **submit** 提交
 
-- 返回VM列表并单击VM的名称以打开其控制台窗口
+返回VM列表并单击VM的名称以打开其控制台窗口
 
-单击 **Snapshots** 以查看快照
+- 单击 **Snapshots** 以查看快照
 
 .. figure:: image/data_protection03.png
 
@@ -50,44 +50,40 @@ VM快照与恢复
 
 .. figure:: image/data_protection04.png
 
-单击 **Details** 可查看快照时的所有VM属性
+- 单击 **Details** 可查看快照时的所有VM属性
 
-- 现在我们可以通过删除磁盘模拟我们的测试VM遭到损坏的情况
+现在我们可以通过删除磁盘模拟我们的测试VM遭到损坏的情况
 
-单击VM下面菜单中的 **Power Off Actions** ,选择Guest Shutdown关闭虚机
+- 单击VM下面菜单中的 **Power Off Actions** ,选择Guest Shutdown关闭虚机
 
-VM前面的绿点变为红点后，单击下面菜单中的 **Update** 并修改您拍摄快照的原始VM
+- VM前面的绿点变为红点后，单击下面菜单中的 **Update** 并修改您拍摄快照的原始VM
 
 .. figure:: image/data_protection05.png
 
 - 向下滚动到磁盘部分，通过点击 **X** 图标，删除CD-ROM和DISKS
 
-点击 **Save** 确认更改.
+- 点击 **Save** 确认更改.
 
 .. figure:: image/data_protection06.png
 
-
-- 现在尝试启动该VM并打开其控制台窗口
+现在尝试启动该VM并打开其控制台窗口
 
 .. figure:: image/data_protection07.png
 
- - 注意，VM此时不再有任何可引导的磁盘，并且显示2048游戏。
+注意，VM此时不再有任何可引导的磁盘，并且显示2048游戏。
  
 .. figure:: image/data_protection08.png
 
-
-关闭VM电源。
+- 关闭VM电源。
 
 - 选择VM，然后从VM列表下方的菜单中单击 **VM Snapshots** .
 
-点击 **Restore** 将VM恢复到删除磁盘之前的状态.
+- 点击 **Restore** 将VM恢复到删除磁盘之前的状态.
 
 .. figure:: image/data_protection09.png
 
 
-- 尝试打开VM并打开控制台。
-
-验证VM是否已成功引导以及其配置是否已还原
+- 尝试打开VM并打开控制台,验证VM是否已成功引导以及其配置是否已还原
 
 配置保护域（PD）
 ..................................
@@ -97,15 +93,15 @@ VM前面的绿点变为红点后，单击下面菜单中的 **Update** 并修改
 
 - 在 **Prism Element > Data Protection** 中, 单击 **Data Protection** , 然后点击 **Table** .
 
-选择 **+ Protection Domain** 以创建PD，然后单击创建Async DR.
+- 选择 **+ Protection Domain** 以创建PD，然后单击创建Async DR.
 
 .. figure:: image/data_protection10.png
 
 - 输入PD的名称PD- *NAME* （注: NAME输入实验人员的姓名全名的拼音）
 
-然后单击 **Create** .
+- 然后单击 **Create** .
 
-- 选择您希望加入PD的VM:
+选择您希望加入PD的VM:
 
 - 通过过滤或滚动以选择您在此训练营中创建的VM，加入到此PD中
 - 向下滚动并单击 **Protect Selected Entities** .
@@ -115,19 +111,20 @@ VM前面的绿点变为红点后，单击下面菜单中的 **Update** 并修改
 
 
  **配置日程计划** :
-   单击 **New Schedule** .
-
-- 选择备份频率(如,每两小时做一次快照).
-
-- 设置保留策略(比如, 保持最多12份快照).
  
-  单击 **Create Schedule** .
+ - 单击 **New Schedule** .
+
+选择备份频率(如,每两小时做一次快照).
+
+设置保留策略(比如, 保持最多12份快照).
+ 
+ - 单击 **Create Schedule** .
 
 .. figure:: image/data_protection12.png
 
--  一个保护域可以有多个计划
+一个保护域可以有多个计划
 
-   点击 **Close** 退出.
+- 点击 **Close** 退出.
 
 .. figure:: image/data_protection13.png
 
